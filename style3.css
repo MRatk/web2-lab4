@@ -1,0 +1,43 @@
+div {
+    height: auto;
+    width: 90vw;
+    max-width: 1200px;
+    background: url("https://assets.codepen.io/209981/iStock-1490023614.jpg");
+    background-size: 100% 100%;
+    background-position: center 50%;
+    transition: all ease 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #37fffe;
+    box-shadow: -2px 2px #fc00a3;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+div:hover {
+    background-size: 170% 170%;
+}
+
+@font-palette-values --retro {
+    font-family: "Honk";
+    base-palette: 5;
+    override-colors: 0 #03001f, 1 #03001f, 2 transparent, 3 transparent,
+    4 transparent, 5 transparent, 6 transparent, 7 transparent;
+}
+
+h1 {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 14, "SHLN" 100;
+    font-palette: --retro;
+    font-size: 2rem;
+    letter-spacing: 0.2ch;
+    filter: drop-shadow(-1px 1px 0px #ff00b2) drop-shadow(-10px 10px 10px #000);
+    transition: ease 250ms font-palette;
+    transform: rotate(0);
+    text-shadow: -5px 0px 0 #36fffe, 5px 0px 0 #36fffe;
+    margin-bottom: 20px;
+}
